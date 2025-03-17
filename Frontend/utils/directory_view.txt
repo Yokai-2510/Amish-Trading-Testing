@@ -1,0 +1,45 @@
+trading_bot_frontend/
+│
+├── main.py                      # Main entry point
+├── assets/                      # Images, icons, etc.
+├── utils/                       # Utility functions
+│   ├── websocket_client.py      # WebSocket communication
+│   ├── config_manager.py        # Configuration management
+│   └── logger.py                # Logging utilities
+│
+├── ui/                          # UI components
+│   ├── app.py                   # Main app container
+│   ├── sidebar.py               # Main sidebar implementation
+│   ├── theme.py                 # Theme and styling
+│   │
+│   ├── connect/                 # Connect module
+│   │   └── connect_view.py
+│   │
+│   ├── overview/                # Overview module
+│   │   └── overview_view.py
+│   │
+│   ├── logs/                    # Logs module
+│   │   └── logs_view.py
+│   │
+│   ├── configure/               # Configure module
+│   │   └── configure_view.py
+│   │
+│   ├── monitor/                 # Monitor module
+│   │   ├── monitor_view.py      # Container for monitor views
+│   │   ├── stocks/              # Stocks submodule
+│   │   │   ├── stocks_sidebar.py
+│   │   │   └── stocks_set_view.py  # Reusable set view for all stock sets
+│   │   │
+│   │   └── options/             # Options submodule
+│   │       ├── options_sidebar.py
+│   │       └── options_set_view.py # Reusable set view for all option sets
+│   │
+│   └── strategies/              # Strategies module
+│       ├── strategies_view.py   # Container for strategy views
+│       ├── stocks_sidebar.py
+│       ├── stocks_set_view.py  
+│       └── options_set_view.py 
+│               
+└── models/                      # Data models
+    ├── config_model.py          # Configuration data structures    
+    └── data_model.py            # Market data structures
