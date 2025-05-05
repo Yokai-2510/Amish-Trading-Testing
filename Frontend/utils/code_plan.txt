@@ -1,0 +1,139 @@
+Frontend : 
+
+    Overview : 
+        - Internet Connection
+        - Net PnL
+        - Current Trades
+
+    Monitor :
+        - Sets Sidebar menu - COMPLETED
+        - Set :
+            - Live Trades
+            - PnL
+            - Indicators Values  
+            - Closed Trades
+
+    Logs : 
+    
+    Strategies :
+        Stocks :
+            - Stocks
+            - Set
+            - Chart
+            - Indicators
+            - Entry
+            - Exit
+    
+        Options :
+            - options
+            - Set
+            - Chart
+            - Indicators
+            - Entry
+            - Exit
+
+    Configurations :
+         
+    Connections : 
+        - Upstox : 
+            - 
+
+    Integrate dictionary across all UI elements
+    Integrate Websockets :
+
+
+Set-up dictionary :
+
+    Dictionaries : 
+        - credentials
+        - strategy options
+        - strategy stocks
+        - configurations 
+
+    
+    - Credentials :
+        - Zerodha  
+        - Upstox  
+        - Kotak 
+        - Dhan
+
+
+    - Strategies :
+
+        - Options  :
+            - Set 1
+            - Set 2 
+            - Set 3
+            - Set 4
+            - Set 5
+            - Set 6 
+            - Set 7
+            - Set 8
+
+            - Each Set Parameters Configurations : 
+
+                - Basic Configurations : 
+                    - Set Name 
+                    - Set Active Status
+                    - Broker Selection
+                    - Start Time 
+                    - End Time
+                    - Entry conditions Check interval
+                    - Exit conditions check interval
+
+
+                - Options Configurations :
+                        - Option Type CE or PE 
+                        - Option Buying or Selling 
+                        - Strike Selection : ATM OTM ITM 
+                        - OTM / ITM strike Selection
+                        - Lot Size
+                        - Lot Size Default Value 
+                        - Expiry Selection
+
+                         
+                - Chart Configurations :
+                    - Chart Type : 
+                        - Candle Stick 
+                        - Heikin Ashi
+                        - Renko 
+                    - Timeframes :
+                        1m,2m,3M,5M,10M,1H,3H,1D,1W,1M     
+
+                - Indicators Configurations : 
+                    - Chart 
+
+                Entry/ Exit Configurations : 
+                    - Stop Loss 
+                        - Price 
+                        - Percentage
+                        - Max Stop Loss 
+                        - Max Stop Loss per Day
+                    - Time based (In Minutes)
+                    - Profit 
+                        - Price
+                        - Percentage
+                    
+
+Backend : 
+
+    Setup Cloud VM : 
+
+    Modules : 
+        Fetch Market Data (all stocks and options)
+            - Stocks : 
+                - Select Spot Price for Stocks 
+        Fetch and calculate Indicators Data
+        Evaluation Engine
+        Update Strategy dictionary and update to Mongo DB 
+        Manager Sets 
+        Broker
+            Upstox APIs
+            Kotak APIs
+            Shoonya APIs
+            Dhan APIs
+            Zerodha APIs
+
+Testing : 
+    First Test websocket client and server on my pc
+

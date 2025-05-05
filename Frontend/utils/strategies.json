@@ -1,0 +1,239 @@
+{
+  "options": {
+    
+    "set1": {
+      "options": {
+        "option_type": "CE",
+        "trade_type": "Buy",
+        "strike_selection": "ATM",
+        "otm_itm_strike": 1,
+        "lot_size": 1,
+        "default_lot_size": 1,
+        "expiry_selection": "weekly"
+      },
+      "set": {
+        "set_name": "Strategy 1",
+        "active": true,
+        "broker": "UPSTOX",
+        "start_time": "09:15",
+        "end_time": "15:15",
+        "entry_check_interval": 60,
+        "exit_check_interval": 30
+      },
+      "chart": {
+        "entry_chart_type": "Candle Stick",
+        "entry_chart_timeframe": "5M",
+        "exit_chart_type": "Candle Stick",
+        "exit_chart_timeframe": "5M"
+      },
+      "indicators": {
+        "bollinger_bands": {"period": 20, "std_dev": 2},
+        "rsi": {"period": 14, "overbought": 70, "oversold": 30},
+        "stochastic_rsi": {"k_period": 14, "d_period": 3, "smooth_k": 3, "smooth_d": 3},
+        "moving_averages": {"period": 20, "type": "SMA", "source": "close"},
+        "macd": {"fast": 12, "slow": 26, "signal": 9},
+        "adx": {"period": 14},
+        "volume": {"threshold": 1000000},
+        "supertrend": {"period": 10, "multiplier": 3},
+        "fibonacci_levels": [0.236, 0.382, 0.5, 0.618, 0.786],
+        "up_trend": {"timeframe": "5M", "num_candles": 3},
+        "down_trend": {"timeframe": "5M", "num_candles": 3}
+      },
+      "entry": {
+        "conditions": "placeholder"
+      },
+      "exit": {
+        "stop_loss": {
+          "type": "Percentage",
+          "percentage_value": 1.5,
+          "price_value": 0,
+          "max_per_day": 3000,
+          "max_per_trade": 1000,
+          "time_based": 30
+        },
+        "target": {
+          "type": "Percentage",
+          "percentage_value": 3.0,
+          "price_value": 0
+        }
+      }
+    },
+
+
+    "set2": {
+      "options": {
+        "option_type": "CE",
+        "trade_type": "Buy",
+        "strike_selection": "ATM",
+        "otm_itm_strike": 1,
+        "lot_size": 1,
+        "default_lot_size": 1,
+        "expiry_selection": "weekly"
+      },
+      "set": {
+        "set_name": "Strategy 2",
+        "active": true,
+        "broker": "UPSTOX",
+        "start_time": "09:15",
+        "end_time": "15:15",
+        "entry_check_interval": 60,
+        "exit_check_interval": 30
+      },
+      "chart": {
+        "entry_chart_type": "Candle Stick",
+        "entry_chart_timeframe": "5M",
+        "exit_chart_type": "Candle Stick",
+        "exit_chart_timeframe": "5M"
+      },
+      "indicators": {
+        "bollinger_bands": {"period": 20, "std_dev": 2},
+        "rsi": {"period": 14, "overbought": 70, "oversold": 30},
+        "stochastic_rsi": {"k_period": 14, "d_period": 3, "smooth_k": 3, "smooth_d": 3},
+        "moving_averages": {"period": 20, "type": "SMA", "source": "close"},
+        "macd": {"fast": 12, "slow": 26, "signal": 9},
+        "adx": {"period": 14},
+        "volume": {"threshold": 1000000},
+        "supertrend": {"period": 10, "multiplier": 3},
+        "fibonacci_levels": [0.236, 0.382, 0.5, 0.618, 0.786],
+        "up_trend": {"timeframe": "5M", "num_candles": 3},
+        "down_trend": {"timeframe": "5M", "num_candles": 3}
+      },
+      "entry": {
+        "conditions": "placeholder"
+      },
+      "exit": {
+        "stop_loss": {
+          "type": "Percentage",
+          "percentage_value": 1.5,
+          "price_value": 0,
+          "max_per_day": 3000,
+          "max_per_trade": 1000,
+          "time_based": 30
+        },
+        "target": {
+          "type": "Percentage",
+          "percentage_value": 3.0,
+          "price_value": 0
+        }
+      }
+    }
+  },
+  
+
+  "set3": {
+    "options": {
+      "option_type": "CE",
+      "trade_type": "Buy",
+      "strike_selection": "ATM",
+      "otm_itm_strike": 1,
+      "lot_size": 1,
+      "default_lot_size": 1,
+      "expiry_selection": "weekly"
+    },
+    "set": {
+      "set_name": "Strategy 1",
+      "active": true,
+      "broker": "UPSTOX",
+      "start_time": "09:15",
+      "end_time": "15:15",
+      "entry_check_interval": 60,
+      "exit_check_interval": 30
+    },
+    "chart": {
+      "entry_chart_type": "Candle Stick",
+      "entry_chart_timeframe": "5M",
+      "exit_chart_type": "Candle Stick",
+      "exit_chart_timeframe": "5M"
+    },
+    "indicators": {
+      "bollinger_bands": {"period": 20, "std_dev": 2},
+      "rsi": {"period": 14, "overbought": 70, "oversold": 30},
+      "stochastic_rsi": {"k_period": 14, "d_period": 3, "smooth_k": 3, "smooth_d": 3},
+      "moving_averages": {"period": 20, "type": "SMA", "source": "close"},
+      "macd": {"fast": 12, "slow": 26, "signal": 9},
+      "adx": {"period": 14},
+      "volume": {"threshold": 1000000},
+      "supertrend": {"period": 10, "multiplier": 3},
+      "fibonacci_levels": [0.236, 0.382, 0.5, 0.618, 0.786],
+      "up_trend": {"timeframe": "5M", "num_candles": 3},
+      "down_trend": {"timeframe": "5M", "num_candles": 3}
+    },
+    "entry": {
+      "conditions": "placeholder"
+    },
+    "exit": {
+      "stop_loss": {
+        "type": "Percentage",
+        "percentage_value": 1.5,
+        "price_value": 0,
+        "max_per_day": 3000,
+        "max_per_trade": 1000,
+        "time_based": 30
+      },
+      "target": {
+        "type": "Percentage",
+        "percentage_value": 3.0,
+        "price_value": 0
+      }
+    }
+  },
+
+
+  "set4": {
+    "options": {
+      "option_type": "CE",
+      "trade_type": "Buy",
+      "strike_selection": "ATM",
+      "otm_itm_strike": 1,
+      "lot_size": 1,
+      "default_lot_size": 1,
+      "expiry_selection": "weekly"
+    },
+    "set": {
+      "set_name": "Strategy 1",
+      "active": true,
+      "broker": "UPSTOX",
+      "start_time": "09:15",
+      "end_time": "15:15",
+      "entry_check_interval": 60,
+      "exit_check_interval": 30
+    },
+    "chart": {
+      "entry_chart_type": "Candle Stick",
+      "entry_chart_timeframe": "5M",
+      "exit_chart_type": "Candle Stick",
+      "exit_chart_timeframe": "5M"
+    },
+    "indicators": {
+      "bollinger_bands": {"period": 20, "std_dev": 2},
+      "rsi": {"period": 14, "overbought": 70, "oversold": 30},
+      "stochastic_rsi": {"k_period": 14, "d_period": 3, "smooth_k": 3, "smooth_d": 3},
+      "moving_averages": {"period": 20, "type": "SMA", "source": "close"},
+      "macd": {"fast": 12, "slow": 26, "signal": 9},
+      "adx": {"period": 14},
+      "volume": {"threshold": 1000000},
+      "supertrend": {"period": 10, "multiplier": 3},
+      "fibonacci_levels": [0.236, 0.382, 0.5, 0.618, 0.786],
+      "up_trend": {"timeframe": "5M", "num_candles": 3},
+      "down_trend": {"timeframe": "5M", "num_candles": 3}
+    },
+    "entry": {
+      "conditions": "placeholder"
+    },
+    "exit": {
+      "stop_loss": {
+        "type": "Percentage",
+        "percentage_value": 1.5,
+        "price_value": 0,
+        "max_per_day": 3000,
+        "max_per_trade": 1000,
+        "time_based": 30
+      },
+      "target": {
+        "type": "Percentage",
+        "percentage_value": 3.0,
+        "price_value": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+Frontend : 
+    - Design code base
+    - sidebar menu and main body placeholder
+    - overview contents
+    - monitor section contents  
+        - monitor sidebar view
+    - strategies configuration contents
+        -strategy sidebar view
+    - logs contents
+    -connect contents
+    - save strategy to dictionary / json
+    - read from a static dictionary / json (monitor/overview section)
+    - implement the websocket
+    
+
+
+  
