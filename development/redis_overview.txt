@@ -1,0 +1,46 @@
+redis dictionaries overview : 
+
+    - configurations 
+        - credentials
+            - api key ...
+            -access_token
+        - strategy
+            - strategy_options
+            - strategy_stocks
+    
+    - instruments 
+        - options df - complete options insturments and details 
+        - stocks df complete options insturments and details 
+        - instruments_options_list 
+        - instrument_stocks_list 
+        - active_stocks
+        - active_options
+
+    - data_streams 
+        - websocket 
+            - options 
+            - stocks 
+            - candles 
+        - candle_data
+            - historical 
+                -stocks 
+                - options 
+            - intraday
+                - stocks 
+                - options 
+    
+    - market_data
+        - combined_candle_data
+            - options
+            - stocks
+        - stocks 
+        - options 
+    
+    - indicators 
+        - stocks 
+        - options 
+    
+    - logs 
+        - connections 
+        - trades 
+         

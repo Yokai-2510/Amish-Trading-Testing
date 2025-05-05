@@ -1,0 +1,15 @@
+{
+    "connections" : {
+        "upstox_api" : false ,
+        "websocket" : false 
+    },
+
+    "ui" : {
+        "frontend_active" : false ,
+        "connections" : {
+            "connect_upstox" : false,
+            "broker_connection_status" : false
+        }
+    }
+
+}

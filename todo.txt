@@ -1,0 +1,20 @@
+- Fetch PE PB ratio in the instruments module + LTP for all equities . Make changes in the frontend as well .
+- Change Redis Integration into Modules (only one connection)
+    Confirm the necessity of websocket. 
+- Incorporate Set compatible structure in the Redis and make changes to the modules as well affected by instruments
+- Complete Evauation Logic 
+    - Options 
+    - Stocks 
+        - Incorporate multiple trading days square off logic 
+- Add new indicator - CCI for entry and exit indicators
+- 
+
+- strategy options and stocks refactor - Done 
+- redis structure refactor  - Done 
+- instruments module refactor  - Done 
+- rest of the modules refactor 
+- complete existing frontend and make changes acc to new redis structure 
+- add new frontend stuff
+- optimize UI 
+- integrate google sheets with the backend
+- create evaluation module

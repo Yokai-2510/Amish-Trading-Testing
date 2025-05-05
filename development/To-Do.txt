@@ -1,0 +1,41 @@
+redis setup
+    - redis setup 
+    - dictionaries
+
+frontend 
+    - UI
+    - redis integration
+    - indicators entry / exit
+
+backend 
+    
+ - Redis Setup and Data Structure  : Done 
+
+ - login : Done 
+
+ - Instrument keys retrieval and upload 
+    - API LTP error
+    - option list error 
+    - change the name of the dictionary 
+
+ - Candles : 
+    Intraday : Fetch + Dynanamic handling : Done 
+    Historical : Fetch + Dynanamic handling : Done 
+    Websocket : Fetch and store to websocket 
+
+ - Websocket : 
+ 
+    - Websocket Data Streamer - working 
+    - Fetch Active instruments (differentiate stocks and options )
+    - Fetch corresponding options for the instruments : Directory - instruments > instrument options 
+    - Process Data 
+        - Options : 
+            - Extend the options json data with the websocket feed 
+            - Heirarchy - websocket > options > underlying symbol > specific option  > option data + original instrument json data 
+            - candle data for each instrument -  websocket > candle data > options > underlying symbol > candle data (candle data only exists for actual option index not for the option chain)
+
+        - Stocks  : 
+            - Extend the stocks(equity) json data with the websocket feed 
+            - Heirarchy - websocket > stocks > underlying symbol > specific stock  > stock data + original instrument json data 
+            - candle data for each instrument -  websocket > candle data > Stocks > underlying symbol > candle data (candle data only exists for actual option index not for the option chain)
+

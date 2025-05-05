@@ -1,0 +1,166 @@
+{
+  "option_set_1": {
+
+    "config": {
+
+      "set_config": {
+        "set_id": "option_set_1",
+        "set_name": "Nifty Momentum CE Buyer",
+        "description": "Buys Nifty Call options.",
+        "set_active_status": true,
+        "broker": "upstox",
+        "start_time": "09:20:00",
+        "end_time": "15:15:00"
+      },
+
+      "instrument_config": { 
+        "underlying_symbol": "NIFTY",
+        "underlying_key" : "NSE_INDEX|Nifty 50", 
+        "option_type": "CE",
+        "trade_type": "Buy",
+        "expiry": "2025-05-08",
+        "strike_selection": "ATM",
+        "strike_offset": 0
+      },
+
+      "trade_parameters": {
+        "order_type": "MARKET",
+        "product_type": "INTRADAY",
+        "quantity_type": "Lots",
+        "quantity_value": 1,
+        "paper_trade" : false
+      },
+
+      "entry_config": {
+        "chart_type": "candlestick",
+        "time_frame": "5m",
+        "entry_logic": "All_AND",
+
+        "exclude_time": {
+          "active": false,
+          "start_time": "12:00:00",
+          "end_time": "13:30:00"
+        }
+      },
+
+      "exit_config": {
+        "exit_logic": "Any_OR",
+        "chart_type": "candlestick",
+        "time_frame": "5m",
+
+        "stop_loss": {
+          "active": true,
+          "type": "percentage",
+          "value": 15.0
+        },
+
+        "target_profit": {
+          "active": true,
+          "type": "percentage",
+          "value": 30.0
+        },
+
+        "time_based_exit": {
+          "active": true,
+          "exit_time": "15:10:00"
+        }
+      },
+
+      "risk_management": {
+        "max_trades_per_day": 5,
+        "max_loss_per_day_absolute": 2000,
+        "max_loss_per_trade_percentage": 20
+      }
+    },
+
+    "indicators": {
+
+      "entry_indicators": {
+
+        "indicator1": {
+          "indicator_name": "RSI_Entry",
+          "active_status": true,
+          "type": "RSI",
+          "logic": "AND",
+
+          "parameters": {
+            "rsi_length": 14,
+            "smoothing_method": "EMA",
+            "smoothing_period": 3,
+            "source": "close"
+          },
+
+          "active_condition": 1
+        },
+
+        "indicator2": {
+          "indicator_name": "Trend_Entry",
+          "active_status": true,
+          "type": "Trend Analysis",
+          "logic": "AND",
+
+          "parameters": {
+            "uptrend_candles": 3,
+            "downtrend_candles": 3
+          },
+
+          "active_condition": 1
+        }
+      },
+
+      "exit_indicators": {
+
+        "indicator1": {
+          "indicator_name": "RSI_Exit",
+          "active_status": true,
+          "type": "RSI",
+          "logic": "OR",
+
+          "parameters": {
+            "rsi_length": 14,
+            "smoothing_method": "EMA",
+            "smoothing_period": 3,
+            "source": "close"
+          },
+
+          "active_condition": 1
+        }
+      }
+    }
+  },
+
+  "option_set_2": {
+    "config": {},
+    "indicators": {}
+  },
+
+  "option_set_3": {
+    "config": {},
+    "indicators": {}
+  },
+
+  "option_set_4": {
+    "config": {},
+    "indicators": {}
+  },
+
+  "option_set_5": {
+    "config": {},
+    "indicators": {}
+  },
+
+  "option_set_6": {
+    "config": {},
+    "indicators": {}
+  },
+
+  "option_set_7": {
+    "config": {},
+    "indicators": {}
+  },
+
+  "option_set_8": {
+    "config": {},
+    "indicators": {}
+  }
+}
